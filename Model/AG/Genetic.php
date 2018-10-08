@@ -1,7 +1,15 @@
 <?php
 
 class Genetic {
-    function cross(){
+	//populacao e o conjunto de turmas
+	private $populacao = array();
+	//percentual de mutação
+	private $mutacao;
+	//indivíduo é a turma
+	private $individuo = array();
+	
+
+    function crossover(){
         
     }
 }

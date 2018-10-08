@@ -18,12 +18,8 @@ Include_once "../Biblioteca/Instituicao.php";
         <div class="nav-wrapper green">
             <a href="#" class="brand-logo">Durendal</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                   <!-- <li><a href="ProfessorView.php">Professor</a></li>
-                    <li><a href="TurmaView.php">Turma</a></li>
-                    <li><a href="GradeView.php">Grade</a></li>
-                    <li><a href="Login.php">SAIR</a></li>-->
                     <?php
-                    menu();
+                        menu();
                     ?>
                 </ul>
             </div>

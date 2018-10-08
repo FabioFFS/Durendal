@@ -1,5 +1,5 @@
 <?php
-    include_once '../Biblioteca/Instituicao.php';
+    include '../Biblioteca/Instituicao.php';
 ?>
 <html>
 <head>
@@ -31,18 +31,16 @@
     </div>
 
     <div class="col s8 center-align z-depth-1">
-        <form method="POST" action="Control/">
+        <form method="POST" action="../../Controller/InstituicaoController/TurmaController.php">
             <h5 class="blue-text"><b>Informações das Turmas</b></h5>
             <div>
-                <input placeholder="" id="novo-placeholder" type="text" class="validate">
-                <label for="first_name">Nome do Preset</label>
-                <input placeholder="" id="novo-placeholder" type="number" class="validate">
-                <label for="first_name">Numero de Turmas</label>
-                <input placeholder="" id="novo-placeholder" type="number" class="validate">
-                <label for="first_name">Aulas Diárias</label>
+                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="numero-turmas">
+                <label for="">Numero de Turmas</label>
+                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="aulas">
+                <label for="">Aulas Diárias</label>
             </div>
             <div class="input-field col s12">
-                <select class="browser-default green lighten-5">
+                <select name="dias" class="browser-default green lighten-5">
                     <option value="" disabled selected>Dias Letivos</option>
                     <option value="1">1 Dia</option>
                     <option value="2">2 Dias</option>
@@ -54,7 +52,7 @@
                 </select>
             </div>
             <div class="input-field col s12">
-                <select class="browser-default green lighten-5">
+                <select class="browser-default green lighten-5" name="turno">
                     <option value="" disabled selected>Escolha o Turno</option>
                     <option value="1">Matutino</option>
                     <option value="2">Vespertino</option>
@@ -63,8 +61,8 @@
             </div>
 
             <div>
-                <a class="waves-effect waves-light btn">Salvar</a>
-                <a class="waves-effect waves-light btn">Cancelar</a>
+                <button type="submit" class="waves-effect waves-light btn">Salvar</button>
+                <button type="" onclick="" class="waves-effect waves-light btn">Cancelar</button>
             </div>
         </form>
     </div>

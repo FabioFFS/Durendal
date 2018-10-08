@@ -13,19 +13,54 @@ class Professor {
         $this->aulas = $aulas;
         $this->email = $email;
     }
-    function getNome(){
+
+    public function getNome()
+    {
         return $this->nome;
     }
-    function getDisciplina(){
+
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+
+    public function getDisciplina()
+    {
         return $this->disciplina;
     }
-    function getDias(){
+
+    public function setDisciplina($disciplina)
+    {
+        $this->disciplina = $disciplina;
+    }
+
+    public function getDias()
+    {
         return $this->dias;
     }
-    function getAulas(){
+
+    public function setDias($dias)
+    {
+        $this->dias = $dias;
+    }
+
+    public function getAulas()
+    {
         return $this->aulas;
     }
-    function getEmail(){
+
+    public function setAulas($aulas)
+    {
+        $this->aulas = $aulas;
+    }
+
+    public function getEmail()
+    {
         return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
     }
 }

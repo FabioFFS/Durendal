@@ -12,10 +12,11 @@
 </head>
 
 <body class="">
+    <div class="row"></div>
     <div class="row">
         <div class="col s4"></div>
-        <div class="col s4 center-align">
-            <h4>Cadastro</h4>
+        <div class="col s4 center-align z-depth-1">
+            <h4><b>Cadastro</b></h4>
             <form action="../Control/Cadastro.php" method="POST">
                 <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome">
                 <label for="first_name"></label>
@@ -35,8 +36,8 @@
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn" onsubmit="cadastro.Salvar();" ="" type="submit">Salvar</button>
-                <button class="waves-effect waves-light btn" onclick="">Cancelar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" ="" type="submit">Salvar</button>
+                <button class="waves-effect waves-light btn red" onclick="">Cancelar</button>
             </form>
         </div>
         <div class="col s4"></div>

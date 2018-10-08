@@ -25,11 +25,11 @@
                     <label for="first_name">Senha</label>
                 </div>
                 <div border="100px">
-                    <button class="waves-effect waves-light btn">Entrar</button>
-                    <button class="waves-effect waves-light btn">Cancelar</button>
+                    <button class="waves-effect waves-light btn blue">Entrar</button>
+                    <button class="waves-effect waves-light btn red">Cancelar</button>
                 </div>
-                <div>
-                    <button class="waves-effect waves-light btn">Novo Cadastro</button>
+                <div class="row">
+                    <button class="waves-effect waves-light btn green">Novo Cadastro</button>
                 </div>
             </div>
             <div class="col s4"></div>
