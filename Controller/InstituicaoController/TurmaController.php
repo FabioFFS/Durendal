@@ -5,10 +5,10 @@
 
 	class TurmaController
 	{
-		$turmas = new Turma(/*$_POST['numero_turmas'],$_POST['aulas'], $_POST['dias'], $_POST['turno']*/);
+		//$turmas = new Turma(/*$_POST['numero_turmas'],$_POST['aulas'], $_POST['dias'], $_POST['turno']*/);
 		function set(){
 			if(isset($_POST['numero_turmas'])){
-				$turma
+				
 			}
 		}
 
@@ -20,6 +20,11 @@
 				$turno = $_POST['turno'];
 
 			}
+		}
+
+		public function salvar()
+		{
+			
 		}
 	}
  ?>

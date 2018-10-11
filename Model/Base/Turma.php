@@ -16,6 +16,7 @@ class Turma {
     public function getNome()
     {
         return $this->nome;
+        
     }
 
     public function setNome($nome)
@@ -31,6 +32,7 @@ class Turma {
     public function setTurno($turno)
     {
         $this->turno = $turno;
+        
     }
 
     public function getDias()

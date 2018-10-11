@@ -1,6 +1,9 @@
 <?php
 Include_once "../Biblioteca/Instituicao.php";
+include "../../Controller/InstituicaoController/HorariosController.php";
+$a = new HorariosController();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +14,7 @@ Include_once "../Biblioteca/Instituicao.php";
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Durendal</title>
 </head>
 
 <body class="">
@@ -27,10 +31,25 @@ Include_once "../Biblioteca/Instituicao.php";
     <!--Espaçamento de pagina-->
     <div class="row"></div>
 
-    <!--Adição de nova disciplna-->
+    <!--Criação de grade-->
     <div class="row">
         <div class="col s2"></div>
         <div class="col s8 z-depth-1">
+        <div class="center"><i>Usar informações cadastradas para criação de horário</i></div>
+        <div class="center"><button class="waves-effect waves-light btn-small blue">Iniciar</button></div>
+        </div>
+        <div class="col s2"></div>
+    </div>
+
+    <!--Lista de horarios-->
+    <div class="row">
+        <div class="col s2"></div>
+        <div class="col s8 z-depth-1">
+        <div class="center"><h5>Voce ainda não possui nenhum horário.</h5></div>
+        
+        <?php
+        $hc = new HorariosController();
+        if($hc->viewloader()!=null){?>
             <table class="centered">
                 <thead>
                   <tr>
@@ -66,6 +85,9 @@ Include_once "../Biblioteca/Instituicao.php";
                 </tr>
             </tbody>
         </table>
+        <?php
+            }
+        ?>
     </div>
     <div class="col s2"></div>
 </div>
