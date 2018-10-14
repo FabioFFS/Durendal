@@ -1,7 +1,6 @@
 <?php 
 	include_once '../../Model/Base/Turma.php';
 	include_once '../../Model/DAO/TurmaDAO.php';
-	echo "asdasda";
 
 	class TurmaController
 	{
@@ -12,19 +11,17 @@
 			}
 		}
 
-		function recieve($turmas, $aulas, $dias, $turno){
+		function salvar($turmas, $aulas, $dias, $turno){
 			if(isset($_POST['numero_turmas'])){
 				$turmas = $_POST['numero_turmas'];
 				$aulas = $_POST['aulas'];
 				$dias = $_POST['dias'];
 				$turno = $_POST['turno'];
-
+				
+				echo "Veio";
+			}else {
+				echo "nao veio";
 			}
-		}
-
-		public function salvar()
-		{
-			
 		}
 	}
  ?>

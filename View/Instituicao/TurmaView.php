@@ -1,5 +1,8 @@
 <?php
-    include '../Biblioteca/Instituicao.php';
+    include_once '../Biblioteca/Instituicao.php';
+    include_once '../../Controller/InstituicaoController/TurmaController.php';
+    
+    $tmc = new TurmaController();
 ?>
 <html>
 <head>
@@ -61,7 +64,7 @@
             </div>
 
             <div>
-                <button type="submit" class="waves-effect waves-light btn">Salvar</button>
+                <button type="submit" class="waves-effect waves-light btn" onclick="$tmc->salvar()">Salvar</button>
                 <button type="" onclick="" class="waves-effect waves-light btn">Cancelar</button>
             </div>
         </form>
