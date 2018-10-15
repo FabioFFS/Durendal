@@ -37,7 +37,7 @@
         <form method="POST" action="../../Controller/InstituicaoController/TurmaController.php">
             <h5 class="blue-text"><b>Informações das Turmas</b></h5>
             <div>
-                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="numero-turmas">
+                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="numero-turmas" required>
                 <label for="">Numero de Turmas</label>
                 <input placeholder="" id="novo-placeholder" type="number" class="validate" name="aulas">
                 <label for="">Aulas Diárias</label>

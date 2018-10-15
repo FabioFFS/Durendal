@@ -32,16 +32,16 @@ Include_once "../Biblioteca/Instituicao.php";
             <div class="col s2"></div>
             <div class="col s8 center-align z-depth-1">
                 <b>Nova Disciplina</b>
-                <input placeholder="" id="novo-placeholder" type="text" class="validate">
+                <input placeholder="" id="novo-placeholder" type="text" class="validate" name="nome_disciplina">
                 <label for="novo-placeholder">Nome da Disciplina</label>
-                <input placeholder="" id="novo-placeholder" type="text" class="validate">
+                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="carga_horaria">
                 <label for="novo-placeholder">Carga Horária</label>
-                <input placeholder="Ex. Jose Fernandes, Raquel Maria, Mariana Almeida" id="novo-placeholder" type="text" class="validate">
+                <input placeholder="Ex. Jose Fernandes, Raquel Maria, Mariana Almeida" name="professores" id="novo-placeholder" type="text" class="validate">
                 <label for="novo-placeholder">Professores da Disciplina</label>
 
-                <div></div>
-                    <a class="waves-effect waves-light btn">Salvar</a>
-                
+                <div>
+                    <button type="submit" class="waves-effect waves-light btn blue">Salvar</button>
+                </div>
             </div>
             <div class="col s2"></div>
         </div>

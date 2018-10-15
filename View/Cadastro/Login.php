@@ -19,9 +19,9 @@
             <div class="col s4 center-align z-depth-1">
                 <h4 class="">LOGIN</h4>
                 <div>
-                    <input placeholder="" id="first_name" type="text" class="validate">
+                    <input placeholder="" id="first_name" type="text" class="validate" name="email">
                     <label for="first_name">E-MAIL</label>
-                    <input placeholder="" id="password" type="password" class="validate">
+                    <input placeholder="" id="password" type="password" class="validate" name="senha">
                     <label for="first_name">Senha</label>
                 </div>
                 <div border="100px">

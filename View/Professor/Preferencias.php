@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+    include_once '../../Controller/InstituicaoController/ProfessoresController.php';
+    $pc = new ProfessoresController();
+?>
 <html>
     <head>
         <!--Import Google Icon Font-->
@@ -38,6 +41,22 @@
                 
 <!-----------------------------------------------------------Tabela de dias disponíveis-->
                 <table class="centered">
+<!--Uso de php-------------------------------------------->
+                <?php 
+                   if($pc->modeloPreferencias()==null){
+                ?>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h5>Nenhum modelo de Horario foi encontrado. Contate a instituição que voce procura.</h5>
+                            </th>
+                        </tr>
+                    </thead>
+<!--Uso de php-------------------------------------------->
+                    <?php
+                   }else{
+                       
+                    ?>
                     <thead>
                         <tr>
                             <th>Dia 1</th>
@@ -185,6 +204,10 @@
                             </td>
                         </tr>
                     </tbody>
+<!--Uso de php-------------------------------------------->
+                    <?php
+                        }
+                    ?>
                 </table>
             </div>
             <div class="col s1">

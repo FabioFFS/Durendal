@@ -18,13 +18,13 @@
         <div class="col s4 center-align z-depth-1">
             <h4><b>Cadastro</b></h4>
             <form action="../Control/Cadastro.php" method="POST">
-                <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome">
+                <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome" required>
                 <label for="first_name"></label>
-                <input placeholder="E-Mail" id="novo-placeholder" type="text" class="validate" name="email">
+                <input placeholder="E-Mail" id="novo-placeholder" type="email" class="validate" name="email" required>
                 <label for="first_name"></label>
-                <input placeholder="Senha" id="novo-placeholder" type="password" class="validate" name="senha">
+                <input placeholder="Senha" id="novo-placeholder" type="password" class="validate" name="senha" required>
                 <label for="first_name"></label>
-                <input placeholder="Repetir Senha" id="novo-placeholder" type="password" class="validate" name="repetir_senha">
+                <input placeholder="Repetir Senha" id="novo-placeholder" type="password" class="validate" name="repetir_senha" required>
                 <label for="first_name"></label>
                 <p>
                     <label>
@@ -32,7 +32,7 @@
                         <span class="black-text">Professor</span>
                     </label>
                     <label>
-                        <input name="tipo" type="radio" />
+                        <input name="tipo" type="radio"/>
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>

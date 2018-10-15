@@ -31,25 +31,28 @@ include_once "../Biblioteca/Instituicao.php";
 	<div class="row">
 		<div class="col s2"></div>
 		<div class="col s8 z-depth-1">
-			<input placeholder="" id="novo-placeholder" type="text" class="validate">
+		<form method ="POST" action="../../Controller/InstituicaoController/ProfessoresController.php">
+			<input placeholder="" id="novo-placeholder" type="email" class="validate" required>
 			<label for="first_name">E-mail professor</label>
 			
+			<!--disciplina do professor-->
+			<!--
 			<div class="input-field col s12">
-				<select multiple>
+				<select multiple required>
 					<option value="" disabled selected>Disciplinas</option>
 					<option value="1">Option 1</option>
 					<option value="2">Option 2</option>
 					<option value="3">Option 3</option>
 				</select>
-				<label>Materialize Multiple Select</label>
+				<label>Disciplinas do Professor</label>
 			</div>
-
+			-->
 			<div class="center">
-				<a class="waves-effect waves-light btn">Adicionar</a>
+				<button type="submit" class="waves-effect waves-light btn blue">Adicionar</button>
 			</div>
 			
 		</div>
-
+		</form>
 		<div class="col s2">
 
 		</div>
