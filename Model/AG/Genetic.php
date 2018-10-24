@@ -6,10 +6,14 @@ class Genetic {
 	//percentual de mutação
 	private $mutacao;
 	//indivíduo é a turma
-	private $individuo = array();
+	private $roleta = array();
 	
 
     function crossover(){
         
-    }
+	}
+	
+	function fitness(){
+		
+	}
 }
