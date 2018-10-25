@@ -1,4 +1,5 @@
 <?php
+    //Verifica se as informações cadastradas pelo usuário estão de acordo para começar a rodar o AG
     class Verificador{
         /*Verifica se o numero total de aulas semanais 
         é suficiente para cumprir com a carga das disciplinas*/

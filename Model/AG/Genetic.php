@@ -5,7 +5,7 @@ class Genetic {
 	private $populacao = array();
 	//percentual de mutação
 	private $mutacao;
-	//indivíduo é a turma
+	//escolhidos para teste de sobrevivencia
 	private $roleta = array();
 	
 
@@ -14,6 +14,6 @@ class Genetic {
 	}
 	
 	function fitness(){
-		
+
 	}
 }

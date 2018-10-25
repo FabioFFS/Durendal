@@ -4,9 +4,14 @@
 
     class TurmaDAO
     {
-        function salvar()
+        public function salvar()
         {
 
+        }
+
+        public function pegarTudo()
+        {
+            
         }
     }
 ?>
