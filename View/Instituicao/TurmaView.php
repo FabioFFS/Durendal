@@ -37,9 +37,12 @@
         <form method="POST" action="../../Controller/InstituicaoController/TurmaController.php">
             <h5 class="blue-text"><b>Informações das Turmas</b></h5>
             <div>
-                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="numero-turmas" required>
-                <label for="">Numero de Turmas</label>
-                <input placeholder="" id="novo-placeholder" type="number" class="validate" name="aulas">
+                <p class="range-field">
+                    <input type="range" name="turmas" id="turmas" min="1" max="50" />
+                </p><label for="">Número de Turmas</label>
+                <p class="range-field">
+                    <input type="range" name="aulas" id="aulas" min="1" max="18" />
+                </p>
                 <label for="">Aulas Diárias</label>
             </div>
             <div class="input-field col s12">

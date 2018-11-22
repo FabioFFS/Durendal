@@ -1,7 +1,7 @@
 <?php
     class Individuo{
         private $identificacao;
-        private $cromo;
+        private $cromo = array();
         private $nota;
 
        public function getIdentificacao(){

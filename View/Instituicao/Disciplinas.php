@@ -35,7 +35,7 @@ Include_once "../Biblioteca/Instituicao.php";
                 <input placeholder="" id="novo-placeholder" type="text" class="validate" name="nome_disciplina">
                 <label for="novo-placeholder">Nome da Disciplina</label>
                 <input placeholder="" id="novo-placeholder" type="number" class="validate" name="carga_horaria">
-                <label for="novo-placeholder">Carga Horária</label>
+                <label for="novo-placeholder">Carga Horária Semanal</label>
                 <input placeholder="Ex. Jose Fernandes, Raquel Maria, Mariana Almeida" name="professores" id="novo-placeholder" type="text" class="validate">
                 <label for="novo-placeholder">Professores da Disciplina</label>
 
@@ -50,12 +50,12 @@ Include_once "../Biblioteca/Instituicao.php";
         <div class="row">
             <div class="col s2"></div>
             <div class="col s8 center-align z-depth-1">
-                <b>Discplinas</b>
+                <b>Discplinas Registradas</b>
                 <table class="center-align">
                     <thead>
                       <tr>
-                        <th>Nome</th>
-                        <th>Carga</th>
+                        <th>Disciplina</th>
+                        <th>Carga Semanal</th>
                         <th>Professores</th>
                     </tr>
                 </thead>

@@ -4,7 +4,7 @@
         /*Verifica se o numero total de aulas semanais 
         é suficiente para cumprir com a carga das disciplinas*/
 
-        public function cargaModelo(){
+        public function verificarCarga(){
 
         }
         /* Verfica se o numero de aulas disponiveis totais dos professores de determinadas

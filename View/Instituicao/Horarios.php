@@ -45,7 +45,7 @@ $a = new HorariosController();
     <div class="row">
         <div class="col s2"></div>
         <div class="col s8 z-depth-1">
-        <div class="center"><h5>Voce ainda não possui nenhum horário.</h5></div>
+        <div class="center"><h6>Voce ainda não possui nenhum horário.</h5></div>
         
         <?php
         $hc = new HorariosController();

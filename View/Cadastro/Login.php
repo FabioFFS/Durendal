@@ -24,12 +24,11 @@
                     <input placeholder="" id="password" type="password" class="validate" name="senha">
                     <label for="first_name">Senha</label>
                 </div>
-                <div border="100px">
+                <div>
                     <button class="waves-effect waves-light btn blue">Entrar</button>
-                    <button class="waves-effect waves-light btn red">Cancelar</button>
                 </div>
                 <div class="row">
-                    <button class="waves-effect waves-light btn green">Novo Cadastro</button>
+                    <a href="Cadastro.php"><button class="waves-effect waves-light btn green">Novo Cadastro</button></a>
                 </div>
             </div>
             <div class="col s4"></div>
