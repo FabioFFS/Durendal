@@ -8,9 +8,13 @@ Include_once "../Biblioteca/Instituicao.php";
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.css"  media="screen,projection"/>
-
+    <link rel="shortcut icon" href="#">
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Titulo-->
+    <title>Disciplinas</title>
+
 </head>
 
 <body class="">
@@ -33,13 +37,30 @@ Include_once "../Biblioteca/Instituicao.php";
             <div class="col s8 center-align z-depth-1">
                 <b>Nova Disciplina</b>
                 <input placeholder="" id="novo-placeholder" type="text" class="validate" name="nome_disciplina">
+                <i class="small material-icons center-align tooltipped" data-position="right" data-tooltip="Exemplo: Matemática; Português...">info_outline</i>
                 <label for="novo-placeholder">Nome da Disciplina</label>
                 <input placeholder="" id="novo-placeholder" type="number" class="validate" name="carga_horaria">
                 <label for="novo-placeholder">Carga Horária Semanal</label>
-                <input placeholder="Ex. Jose Fernandes, Raquel Maria, Mariana Almeida" name="professores" id="novo-placeholder" type="text" class="validate">
-                <label for="novo-placeholder">Professores da Disciplina</label>
 
-                <div>
+                <div class="input-field col s12">
+                    <select multiple>
+                        <?php
+                        $c=1;
+                            if($c=1){
+                                for($a=1;$a<2;$a++){?>
+                                    <option>A</option>
+                            <?php
+                                }
+                            }else{
+                                
+                            }
+                            ?>
+                        
+                    </select>
+                    <label>Professores da Disciplina</label>
+                </div>
+
+                <div class="row center-align">
                     <button type="submit" class="waves-effect waves-light btn blue">Salvar</button>
                 </div>
             </div>
@@ -50,11 +71,11 @@ Include_once "../Biblioteca/Instituicao.php";
         <div class="row">
             <div class="col s2"></div>
             <div class="col s8 center-align z-depth-1">
-                <b>Discplinas Registradas</b>
+                <b>Disciplinas Registradas</b>
                 <table class="center-align">
                     <thead>
                       <tr>
-                        <th>Disciplina</th>
+                        <th>Nome</th>
                         <th>Carga Semanal</th>
                         <th>Professores</th>
                     </tr>
@@ -72,6 +93,19 @@ Include_once "../Biblioteca/Instituicao.php";
     <div class="col s2"></div>
 </div>
 <!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="../materialize/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../materialize/js/materialize.js"></script>
+<!--Multi-Select-->
+<script>
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
+<!--Icones com info-->
+<script>
+    $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+</script>
 </body>
 </html>
