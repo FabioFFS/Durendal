@@ -86,6 +86,41 @@
         <table>
             <thead>
               <tr>
+                    <th class="center-align" colspan="5">Informações Gerais</th>
+              </tr>
+              <tr>
+                  <th>Nome</th>
+                  <th>Turmas</th>
+                  <th>Aulas/Dia</th>
+                  <th>Dias Letivos</th>
+                  <th>Nota</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                <td>2018/1</td>
+                <td>20</td>
+                <td>6</td>
+                <td>5</td>
+                <td>???</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<div class="col s2"></div>
+</div>
+
+<div class="row">
+    <div class="col s2"></div>
+    <div class="col s8 z-depth-1">
+        <table>
+            <thead>
+              <tr>
+                    <th class="center-align" colspan="5">Turmas Registradas</th>
+              </tr>
+              <tr>
                   <th>Nome</th>
                   <th>Turmas</th>
                   <th>Aulas/Dia</th>

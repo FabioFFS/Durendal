@@ -35,12 +35,18 @@ Include_once "../Biblioteca/Instituicao.php";
         <div class="row">
             <div class="col s2"></div>
             <div class="col s8 center-align z-depth-1">
-                <b>Nova Disciplina</b>
+            <h5 class="blue-text"><b>Informações das Turmas</b></h5>
+                
                 <input placeholder="" id="novo-placeholder" type="text" class="validate" name="nome_disciplina">
-                <i class="small material-icons center-align tooltipped" data-position="right" data-tooltip="Exemplo: Matemática; Português...">info_outline</i>
-                <label for="novo-placeholder">Nome da Disciplina</label>
+                <label for="novo-placeholder">Nome da Disciplina
+                    <i class="small material-icons center-align tooltipped" data-position="right" data-tooltip="Exemplo: Matemática; Português...">info_outline</i>                
+                </label>
+
                 <input placeholder="" id="novo-placeholder" type="number" class="validate" name="carga_horaria">
-                <label for="novo-placeholder">Carga Horária Semanal</label>
+                <label for="novo-placeholder">
+                    Carga Horária Semanal
+                    <i class="small material-icons center-align tooltipped" data-position="right" data-tooltip="Número de aulas que essa disciplina deve ter durante a semana">info_outline</i>                
+                </label>
 
                 <div class="input-field col s12">
                     <select multiple>
@@ -57,7 +63,10 @@ Include_once "../Biblioteca/Instituicao.php";
                             ?>
                         
                     </select>
-                    <label>Professores da Disciplina</label>
+                    <label>Professores da Disciplina
+                    <i class="small material-icons center-align tooltipped" data-position="right" data-tooltip="Professores que podem ministrar essa disciplina">info_outline</i>                
+
+                    </label>
                 </div>
 
                 <div class="row center-align">

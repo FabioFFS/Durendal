@@ -36,8 +36,8 @@
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" ="" type="submit">Salvar</button>
-                <button class="waves-effect waves-light btn red" onclick="">Cancelar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" type="submit">Salvar</button>
+                <button class="waves-effect waves-light btn red" onclick="window.location.href='Login.php'">Cancelar</button>
             </form>
         </div>
         <div class="col s4"></div>
