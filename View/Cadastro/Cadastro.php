@@ -9,6 +9,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Durendal</title>
 </head>
 
 <body class="">
@@ -17,7 +18,7 @@
         <div class="col s4"></div>
         <div class="col s4 center-align z-depth-1">
             <h4><b>Cadastro</b></h4>
-            <form action="../Control/Cadastro.php" method="POST">
+            <form action="../../Controller/LoginCadastro/CadastroControl.php?checkAll()" method="POST">
                 <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome" required>
                 <label for="first_name"></label>
                 <input placeholder="E-Mail" id="novo-placeholder" type="email" class="validate" name="email" required>
@@ -36,7 +37,7 @@
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" type="submit">Salvar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" type="submit">Cadastrar</button>
                 <button class="waves-effect waves-light btn red" onclick="window.location.href='Login.php'">Cancelar</button>
             </form>
         </div>
