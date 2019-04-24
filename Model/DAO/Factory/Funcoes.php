@@ -6,5 +6,5 @@ class Funcoes {
     
     public function cripto($senha) {
         return password_hash($senha, PASSWORD_DEFAULT);
-    } 
+    }
 }
