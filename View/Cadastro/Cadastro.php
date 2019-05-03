@@ -1,4 +1,5 @@
 <?php
+    require_once '../../Controller/LoginCadastro/CadastroControl.php';
 ?>
 <html>
 <head>
@@ -18,7 +19,7 @@
         <div class="col s4"></div>
         <div class="col s4 center-align z-depth-1">
             <h4><b>Cadastro</b></h4>
-            <form action="../../Controller/LoginCadastro/CadastroControl.php?checkAll()" method="POST">
+            <form action="../../Controller/LoginCadastro/CadastroControl.php" method="POST">
                 <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome" required>
                 <label for="first_name"></label>
                 <input placeholder="E-Mail" id="novo-placeholder" type="email" class="validate" name="email" required>
@@ -29,15 +30,15 @@
                 <label for="first_name"></label>
                 <p>
                     <label>
-                        <input name="tipo" type="radio"/>
+                        <input name="tipo" type="radio" value="professor"/>
                         <span class="black-text">Professor</span>
                     </label>
                     <label>
-                        <input name="tipo" type="radio"/>
+                        <input name="tipo" type="radio" value="instituicao"/>
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn blue" onsubmit="cadastro.Salvar();" type="submit">Cadastrar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="<?php (new CadastroControl)->check() ?>" type="submit">Cadastrar</button>
                 <button class="waves-effect waves-light btn red" onclick="window.location.href='Login.php'">Cancelar</button>
             </form>
         </div>

@@ -7,11 +7,11 @@ class CadastroDAO {
     
     private $nome;
     
-    function __construct($param) {
+    function __construct() {
         $this->con = new Connection();
     }
     
-    function insert($dado){
+    function insert($dados){
         try{
             $cst = $this->con->conectar()->prepare("SELECT 'nome', 'email', 'senha'");
             $cst->bindParam(":nome", $this->nome, PDO::PARAM_STR);
@@ -19,6 +19,7 @@ class CadastroDAO {
             
         } catch (PDOException $ex) {
           return 'Erro: '+$ex->getMessage();
+          
         }
     }
     function delete($dado){
@@ -32,14 +33,14 @@ class CadastroDAO {
         try{
             
         } catch (PDOException $ex) {
-
+            
         }
     }
     function select($dado){
         try{
             
         } catch (PDOException $ex) {
-
+            
         }
     }
 }

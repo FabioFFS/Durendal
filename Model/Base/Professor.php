@@ -1,12 +1,14 @@
 <?php
 class Professor {
     private $nome;
+    private $email;
+    private $senha;
     private $disciplina;
     private $dias;
     private $aulas;
-    private $email;
     
-    function __construct($nome, $disciplina, $dias, $aulas, $email) {
+    
+    function __construct($nome,$email, $senha, $disciplina, $dias, $aulas ) {
         $this->nome = $nome;
         $this->disciplina = new Discoplina();
         $this->dias = $dias;
