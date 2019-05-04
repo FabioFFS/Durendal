@@ -3,7 +3,6 @@
 require_once '../../Model/DAO/Factory/Funcoes.php';
 require_once '../../Model/Base/Professor.php';
 require_once '../../Model/base/Instituicao.php';
-
 class CadastroControl{
 	private $nome;
 	private $email;
@@ -13,7 +12,11 @@ class CadastroControl{
         
         private $novo;
         
-        
+        public function __construct() {
+            $this->check();
+            echo "as";
+        }
+
         public function check(/*$nome, $email, $senha, $repetir_senha, $tipo*/) {
             if(isset($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['repetir_senha'], $_POST['tipo']))
             {
@@ -23,23 +26,27 @@ class CadastroControl{
                 $this->repetir_senha = (new Funcoes())->cripto($_POST['repetir_senha']);
                 $this->tipo = $_POST['tipo'];
                 
-                echo "deu ruim";
+                echo "gravado";
+                
+                
                 if((new Funcoes())->comparar($_POST['senha'], $_POST['repetir_senha']))
                 {
                         if($_POST['tipo']=='professor')
                         {
                             $novo = new Professor($_POST['nome'], $_POST['email'], $senha, $disciplina, $dias, $aulas);
-                            echo $this->senha;
+                            echo 'Senha: '.$this->senha;
                         }else
                         {
-                            echo 'Deu ruim';
+                            
+                            echo 'Tipo: Insituição';
+                            
                         }
                 }else
                 {
                     
                 }
             }else{
-                
+               echo "Nothing here"; 
             }
         }
         

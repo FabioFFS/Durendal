@@ -38,7 +38,7 @@
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn blue" onsubmit="<?php (new CadastroControl)->check() ?>" type="submit">Cadastrar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="" type="submit">Cadastrar</button>
                 <button class="waves-effect waves-light btn red" onclick="window.location.href='Login.php'">Cancelar</button>
             </form>
         </div>
