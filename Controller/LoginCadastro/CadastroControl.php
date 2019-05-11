@@ -12,13 +12,13 @@ class CadastroControl{
         
         private $novo;
         
-        public function __construct() {
+       /* public function __construct() {
             $this->check();
-            echo "as";
-        }
-
-        public function check(/*$nome, $email, $senha, $repetir_senha, $tipo*/) {
-            if(isset($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['repetir_senha'], $_POST['tipo']))
+            echo "Contrutor \n";
+        }*/
+        
+        public function check($nome, $email, $senha, $repetir_senha, $tipo) {
+            /*if(isset($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['repetir_senha'], $_POST['tipo']))
             {
                 $this->nome = $_POST['nome'];
                 $this->email = $_POST['email'];
@@ -27,7 +27,6 @@ class CadastroControl{
                 $this->tipo = $_POST['tipo'];
                 
                 echo "gravado";
-                
                 
                 if((new Funcoes())->comparar($_POST['senha'], $_POST['repetir_senha']))
                 {
@@ -47,7 +46,13 @@ class CadastroControl{
                 }
             }else{
                echo "Nothing here"; 
-            }
+            }*/
+            $this->nome = $nome;
+            $this->email = $email;
+            $this->tipo = $tipo;
+            $this->senha = $senha;
+            $this->repetir_senha = $repetir_senha;
+            echo "Top";
         }
         
         function checkAll(){
@@ -65,6 +70,6 @@ class CadastroControl{
 }
 /*if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $cad = new CadastroControl();
-    $cad->checkAll();
+    $cad->check();
 }*/
 ?>

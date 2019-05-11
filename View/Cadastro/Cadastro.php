@@ -1,5 +1,16 @@
 <?php
     require_once '../../Controller/LoginCadastro/CadastroControl.php';
+    /*if(isset($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['repetir_senha'], $_POST['tipo']))
+            {
+                $nome = $_POST['nome'];
+                $email = $_POST['email'];
+                $senha = (new Funcoes())->cripto($_POST['senha']);
+                $repetir_senha = (new Funcoes())->cripto($_POST['repetir_senha']);
+                $tipo = $_POST['tipo'];
+                
+                (new CadastroControl())->check($nome, $email, $senha, $repetir_senha, $tipo);
+                
+            }*/
 ?>
 <html>
 <head>
@@ -19,7 +30,8 @@
         <div class="col s4"></div>
         <div class="col s4 center-align z-depth-1">
             <h4><b>Cadastro</b></h4>
-            <form action="../../Controller/LoginCadastro/CadastroControl.php" method="POST">
+            <!--<form action="../../Controller/LoginCadastro/CadastroControl.php" method="POST">-->
+            <form method="POST">
                 <input placeholder="Nome" id="novo-placeholder" type="text" class="validate" name="nome" required>
                 <label for="first_name"></label>
                 <input placeholder="E-Mail" id="novo-placeholder" type="email" class="validate" name="email" required>
@@ -38,13 +50,31 @@
                         <span class="black-text">Insitituição</span>
                     </label>
                 </p>
-                <button class="waves-effect waves-light btn blue" onsubmit="" type="submit">Cadastrar</button>
+                <button class="waves-effect waves-light btn blue" onsubmit="" type="submit" id="cadastrar">Cadastrar</button>
                 <button class="waves-effect waves-light btn red" onclick="window.location.href='Login.php'">Cancelar</button>
             </form>
         </div>
         <div class="col s4"></div>
     </div>
     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <script type="text/javascript">
+        function salvar()
+        {
+            $.ajax({
+            url: "././Controller/LoginCadastro/CadastroControl.php",
+            type: "POST",
+            data: "nome=nome&email=email&senha=senha&repetir_senha=repetir_senha&tipo=tipo",
+            dataType: "html"
+            )};
+        }
+        
+        $.(#cadastrar).click(function (){
+            salvar();
+            console.log("FON");
+        })
+    </script>
 </body>
 </html>
