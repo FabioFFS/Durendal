@@ -1,0 +1,6 @@
+{
+    "name": "durendal/composer-php",
+    "require": {
+        "php" : ">=5.3.3"
+    }
+}

@@ -57,10 +57,14 @@
         <div class="col s4"></div>
     </div>
     <!--JavaScript at end of body for optimized loading-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     
     <script type="text/javascript">
+        $(document).ready(function(){
+           alert("Ok");
+        });
+        
         function salvar()
         {
             $.ajax({
@@ -74,7 +78,7 @@
         $.(#cadastrar).click(function (){
             salvar();
             console.log("FON");
-        })
+        });
     </script>
 </body>
 </html>
