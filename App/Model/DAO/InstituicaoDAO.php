@@ -2,7 +2,7 @@
 require_once '/Factory/Funcoes.php';
 require_once '/Factory/Connection.php';
 
-class InstituicaoDAO {
+class CadastroDAO {
     private $con;
     
     private $nome;

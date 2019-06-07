@@ -2,16 +2,10 @@
 
 class Instituicao {
     private $nome;
-
-    function __construct($nome){
-    	$this->nome = $nome;
-    }
-
+    private $email;
+    private $senha;
+    
     function getNome(){
-    	return $this->nome;
-    }
-
-    function setNome($nome){
-    	$this->nome = $nome;
+        
     }
 }

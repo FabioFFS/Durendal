@@ -12,62 +12,37 @@ class CadastroControl{
 	private $repetir_senha;
         
         private $novo;
-        
-       /* public function __construct() {
-            $this->check();
-            echo "Contrutor \n";
-        }*/
-        
-        public function check($nome, $email, $senha, $repetir_senha, $tipo) {
-            /*if(isset($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['repetir_senha'], $_POST['tipo']))
-            {
-                $this->nome = $_POST['nome'];
-                $this->email = $_POST['email'];
-                $this->senha = (new Funcoes())->cripto($_POST['senha']);
-                $this->repetir_senha = (new Funcoes())->cripto($_POST['repetir_senha']);
-                $this->tipo = $_POST['tipo'];
+        //Verifica se as variaveis estao todas setadas
+        function checkVariables(){
+            if($_POST['nome'] and $_POST['email'] and $_POST['senha'] and $_POST['repetir_senha']){
                 
-                echo "gravado";
+                $this->senha = cripto($_POST['senha']);
+                $this->repetir_senha = cripto($_POST['repetir_senha']);
                 
-                if((new Funcoes())->comparar($_POST['senha'], $_POST['repetir_senha']))
-                {
-                        if($_POST['tipo']=='professor')
-                        {
-                            $novo = new Professor($_POST['nome'], $_POST['email'], $senha, $disciplina, $dias, $aulas);
-                            echo 'Senha: '.$this->senha;
-                        }else
-                        {
-                            
-                            echo 'Tipo: Insituição';
-                            
-                        }
-                }else
-                {
-                    
+                if($this->senha!=$this->repetir_senha){
+                    return false;
+                }else{
+                    salvar();
                 }
             }else{
-               echo "Nothing here"; 
-            }*/
-            $this->nome = $nome;
-            $this->email = $email;
-            $this->tipo = $tipo;
-            $this->senha = $senha;
-            $this->repetir_senha = $repetir_senha;
-            echo "Top";
+		return false;
+            }
+	}
+              
+        public function salvar() {
+                $this->nome = $_POST['nome'];
+                $this->email = $_POST['email'];
+                //$this->senha = (new Funcoes())->cripto($_POST['senha']);
+                //$this->repetir_senha = (new Funcoes())->cripto($_POST['repetir_senha']);
+                $this->tipo = $_POST['tipo'];
+                if($tipo=='instituicao'){
+                    $instituicao = new Instituicao();
+                    $instituicaoDAO = new InstituicaoDAO();
+                }else{
+                    $profesorr = new Professor($nome, $email, $senha, $disciplina, $dias, $aulas);
+                }
+                
         }
-        
-        function checkAll(){
-		if($_POST['nome'] and $_POST['email'] and $_POST['senha'] and $_POST['repetir_senha']){
-			echo "Deu bom =)";
-		}else{
-			echo "Deu ruim ae";
-		}
-	}
-
-	private function salvar(){
-		
-			return boolean;
-	}
 }
 /*if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $cad = new CadastroControl();
