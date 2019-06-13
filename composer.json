@@ -1,0 +1,14 @@
+
+{
+    "name": "durendal/durendal",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Controller\\": "App/Controller/",
+            "Base\\": "App/Model/Base/"
+            
+        }
+    }
+    
+}

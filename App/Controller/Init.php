@@ -1,7 +1,8 @@
 <?php
-namespace App;
+namespace Controller;
+
 class Init {
     public function __construct() {
-        echo "carregou";
+        echo "Init carregado!";
     }
 }

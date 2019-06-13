@@ -6,15 +6,19 @@ class InstituicaoDAO {
     private $con;
     
     private $nome;
+    private $email;
+    private $senha;
     
     function __construct() {
         $this->con = new Connection();
     }
     
-    function insert($dados){
+    function insert($instituicao){
         try{
             $cst = $this->con->conectar()->prepare("SELECT 'nome', 'email', 'senha'");
             $cst->bindParam(":nome", $this->nome, PDO::PARAM_STR);
+            $cst->bindParam(":email", $this->email, PDO::PARAM_STR);
+            $cst->bindParam(":senha", $this->senha, PDO::PARAM_STR);
             
             
         } catch (PDOException $ex) {
