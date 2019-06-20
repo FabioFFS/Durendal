@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 //require 'App/Init.php';
 $b = new Base\Instituicao();
 echo '<br />';
-$i = new \App\Controller
+$i = new Controllers\ProfessorController\Init();
 echo '<br />';
 $a = new Base\Disciplina('asd', 'asd', 'asd');
 

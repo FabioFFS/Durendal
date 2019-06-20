@@ -9,6 +9,7 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     public static $prefixLengthsPsr4 = array (
         'C' => 
         array (
+            'Controllers\\ProfessorController\\' => 32,
             'Controller\\' => 11,
         ),
         'B' => 
@@ -22,6 +23,10 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $prefixDirsPsr4 = array (
+        'Controllers\\ProfessorController\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Controller/ProfessorController',
+        ),
         'Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/Controller',
@@ -37,9 +42,9 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $classMap = array (
-        'App\\Controller\\Init' => __DIR__ . '/../..' . '/App/Controller/Init.php',
         'Base\\Disciplina' => __DIR__ . '/../..' . '/App/Model/Base/Disciplina.php',
         'Base\\Instituicao' => __DIR__ . '/../..' . '/App/Model/Base/Instituicao.php',
+        'Controllers\\ProfessorController\\Init' => __DIR__ . '/../..' . '/App/Controller/ProfessorController/Init.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

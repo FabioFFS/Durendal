@@ -6,8 +6,8 @@
         "psr-4": {
             "App\\": "App/",
             "Controller\\": "App/Controller/",
-            "Base\\": "App/Model/Base/"
-            
+            "Base\\": "App/Model/Base/",
+            "Controllers\\ProfessorController\\": "App/Controller/ProfessorController"
         }
     }
     

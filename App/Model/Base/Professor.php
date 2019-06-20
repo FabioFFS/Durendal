@@ -8,13 +8,13 @@ class Professor {
     private $aulas;
     
     
-    function __construct($nome,$email, $senha, $disciplina, $dias, $aulas ) {
+    /*function __construct($nome, $email, $senha, $disciplina, $dias, $aulas ) {
         $this->nome = $nome;
         $this->disciplina = new Discoplina();
         $this->dias = $dias;
         $this->aulas = $aulas;
         $this->email = $email;
-    }
+    }*/
 
     public function getNome()
     {

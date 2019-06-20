@@ -1,5 +1,5 @@
 <?php
-namespace Controller;
+namespace Controllers\ProfessorController;
 
 class Init {
     public function __construct() {
