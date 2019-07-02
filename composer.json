@@ -5,9 +5,11 @@
     "autoload": {
         "psr-4": {
             "App\\": "App/",
-            "Controller\\": "App/Controller/",
-            "Base\\": "App/Model/Base/",
-            "Controllers\\ProfessorController\\": "App/Controller/ProfessorController"
+            "Controllers\\": "App/Controller/",
+            "Model\\Base\\": "App/Model/Base/",
+            "Controllers\\ProfessorController\\": "App/Controller/ProfessorController",
+            "Model\\DAO\\": "App/Model/DAO",
+            "Model\\DAO\\Factory\\": "App/Model/DAO/Factory"
         }
     }
     

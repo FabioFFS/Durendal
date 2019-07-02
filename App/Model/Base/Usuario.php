@@ -1,5 +1,6 @@
 <?php
-namespace Base;
+namespace Model\Base;
+
 class Usuario {
     private $nome;
     private $senha;

@@ -1,5 +1,5 @@
 <?php
-namespace Base;
+namespace Model\Base;
 
 class Disciplina
 {
@@ -12,7 +12,6 @@ class Disciplina
         $this->nome = $nome;
         $this->dificuldade = $dificuldade;
         $this->minimo = $minimo;
-        echo "Base disciplina";
     }
 
     public function getNome()

@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Model\\DAO\\Factory\\' => array($baseDir . '/App/Model/DAO/Factory'),
+    'Model\\DAO\\' => array($baseDir . '/App/Model/DAO'),
+    'Model\\Base\\' => array($baseDir . '/App/Model/Base'),
     'Controllers\\ProfessorController\\' => array($baseDir . '/App/Controller/ProfessorController'),
-    'Controller\\' => array($baseDir . '/App/Controller'),
-    'Base\\' => array($baseDir . '/App/Model/Base'),
+    'Controllers\\' => array($baseDir . '/App/Controller'),
     'App\\' => array($baseDir . '/App'),
 );

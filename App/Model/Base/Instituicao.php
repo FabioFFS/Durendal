@@ -1,7 +1,13 @@
 <?php
-namespace Base;
+namespace Model\Base;
 
 class Instituicao extends Usuario{
-    private $email;
-    private $senha;
+    private $data_cadastro;
+    
+    function setData_Cadastro($data_cadastro) {
+        $this->data_cadastro;
+    }
+    function getData_Cadastro() {
+        return $this->data_cadastro;
+    }
 }

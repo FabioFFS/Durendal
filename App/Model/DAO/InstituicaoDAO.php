@@ -1,20 +1,21 @@
 <?php
-require_once '/Factory/Funcoes.php';
-require_once '/Factory/Connection.php';
+namespace Model\DAO;
 
-class CadastroDAO {
+class InstituicaoDAO {
     private $con;
-    
     private $nome;
     
     function __construct() {
         $this->con = new Connection();
     }
     
-    function insert($dados){
+    function insert($objeto){
         try{
-            $cst = $this->con->conectar()->prepare("SELECT 'nome', 'email', 'senha'");
-            $cst->bindParam(":nome", $this->nome, PDO::PARAM_STR);
+            $cst = $this->con->conectar()->prepare("INSERT INTO Instituicao ('nome', data_cadastro, 'senha', 'email') VALUES (:nome, :data_cadastro, :senha, :email)");
+            $cst->bindParam(":nome", $objeto->nome, PDO::PARAM_STR);
+            $cst->bindParam(":data_cadastro", $objeto->nome, PDO::PARAM_INT);
+            $cst->bindParam(":email", $objeto->nome, PDO::PARAM_STR);
+            $cst->bindParam(":senha", $objeto->nome, PDO::PARAM_STR);
             
             
         } catch (PDOException $ex) {

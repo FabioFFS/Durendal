@@ -4,12 +4,13 @@ require 'vendor/autoload.php';
 //require 'Init.php';
 //$a = new Autoload();
 //require 'App/Init.php';
-$b = new Base\Instituicao();
-echo '<br />';
-$i = new Controllers\ProfessorController\Init();
-echo '<br />';
-$a = new Base\Disciplina('asd', 'asd', 'asd');
+//$b = new Base\Instituicao();
+//echo '<br />';
+//$i = new Controllers\ProfessorController\Init();
+//echo '<br />';
+//$a = new Base\Disciplina('asd', 'asd', 'asd');
 
 
 /*$c = new IndexController();
 $c->ignite();*/
+$a = new \Model\DAO\InstituicaoDAO();

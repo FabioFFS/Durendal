@@ -7,14 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInitb9432e224800528136ead096394b2546
 {
     public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'Model\\DAO\\Factory\\' => 18,
+            'Model\\DAO\\' => 10,
+            'Model\\Base\\' => 11,
+        ),
         'C' => 
         array (
             'Controllers\\ProfessorController\\' => 32,
-            'Controller\\' => 11,
-        ),
-        'B' => 
-        array (
-            'Base\\' => 5,
+            'Controllers\\' => 12,
         ),
         'A' => 
         array (
@@ -23,17 +25,25 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $prefixDirsPsr4 = array (
+        'Model\\DAO\\Factory\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Model/DAO/Factory',
+        ),
+        'Model\\DAO\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Model/DAO',
+        ),
+        'Model\\Base\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Model/Base',
+        ),
         'Controllers\\ProfessorController\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/Controller/ProfessorController',
         ),
-        'Controller\\' => 
+        'Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/Controller',
-        ),
-        'Base\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/App/Model/Base',
         ),
         'App\\' => 
         array (
@@ -42,9 +52,14 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $classMap = array (
-        'Base\\Disciplina' => __DIR__ . '/../..' . '/App/Model/Base/Disciplina.php',
-        'Base\\Instituicao' => __DIR__ . '/../..' . '/App/Model/Base/Instituicao.php',
         'Controllers\\ProfessorController\\Init' => __DIR__ . '/../..' . '/App/Controller/ProfessorController/Init.php',
+        'Model\\Base\\Disciplina' => __DIR__ . '/../..' . '/App/Model/Base/Disciplina.php',
+        'Model\\Base\\Instituicao' => __DIR__ . '/../..' . '/App/Model/Base/Instituicao.php',
+        'Model\\Base\\Usuario' => __DIR__ . '/../..' . '/App/Model/Base/Usuario.php',
+        'Model\\DAO\\CadastroDAO' => __DIR__ . '/../..' . '/App/Model/DAO/InstituicaoDAO.php',
+        'Model\\DAO\\DisciplinaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/DisciplinaDAO.php',
+        'Model\\DAO\\Factory\\Connection' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Connection.php',
+        'Model\\DAO\\TurmaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/TurmaDAO.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
