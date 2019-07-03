@@ -31,7 +31,7 @@ include_once "../Biblioteca/Instituicao.php";
 	<div class="row">
 		<div class="col s2"></div>
 		<div class="col s8 z-depth-1">
-		<form method ="POST" action="../../Controller/InstituicaoController/ProfessoresController.php">
+		<form method ="POST" action="../../Controllers/InstituicaoController/ProfessoresController.php">
 			<input placeholder="" id="novo-placeholder" type="email" class="validate" required>
 			<label for="first_name">E-mail professor</label>
 			

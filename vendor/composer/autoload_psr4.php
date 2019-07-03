@@ -10,6 +10,7 @@ return array(
     'Model\\DAO\\' => array($baseDir . '/App/Model/DAO'),
     'Model\\Base\\' => array($baseDir . '/App/Model/Base'),
     'Controllers\\ProfessorController\\' => array($baseDir . '/App/Controller/ProfessorController'),
+    'Controllers\\LoginCadastro\\' => array($baseDir . '/App/Controllers/LoginCadastro'),
     'Controllers\\' => array($baseDir . '/App/Controller'),
     'App\\' => array($baseDir . '/App'),
 );

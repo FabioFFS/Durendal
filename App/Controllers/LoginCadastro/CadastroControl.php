@@ -1,8 +1,9 @@
 <?php
+namespace Controllers\LoginCadastro;
 //require '../../View/Cadastro/Cadastro.php';
-require_once '../../Model/DAO/Factory/Funcoes.php';
+//require_once '../../Model/DAO/Factory/Funcoes.php';
 require_once '../../Model/Base/Professor.php';
-require_once '../../Model/base/Instituicao.php';
+//require_once '../../Model/base/Instituicao.php';
 
 class CadastroControl{
 	private $nome;

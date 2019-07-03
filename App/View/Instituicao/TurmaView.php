@@ -34,7 +34,7 @@
     </div>
 
     <div class="col s8 center-align z-depth-1">
-        <form method="POST" action="../../Controller/InstituicaoController/TurmaController.php">
+        <form method="POST" action="../../Controllers/InstituicaoController/TurmaController.php">
             <h5 class="blue-text"><b>Informações das Turmas</b></h5>
             <div>
                 <p class="range-field">

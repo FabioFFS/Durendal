@@ -16,6 +16,7 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
         'C' => 
         array (
             'Controllers\\ProfessorController\\' => 32,
+            'Controllers\\LoginCadastro\\' => 26,
             'Controllers\\' => 12,
         ),
         'A' => 
@@ -41,6 +42,10 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
         array (
             0 => __DIR__ . '/../..' . '/App/Controller/ProfessorController',
         ),
+        'Controllers\\LoginCadastro\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Controllers/LoginCadastro',
+        ),
         'Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/Controller',
@@ -52,13 +57,14 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $classMap = array (
-        'Controllers\\ProfessorController\\Init' => __DIR__ . '/../..' . '/App/Controller/ProfessorController/Init.php',
+        'Controllers\\LoginCadastro\\CadastroControl' => __DIR__ . '/../..' . '/App/Controllers/LoginCadastro/CadastroControl.php',
         'Model\\Base\\Disciplina' => __DIR__ . '/../..' . '/App/Model/Base/Disciplina.php',
         'Model\\Base\\Instituicao' => __DIR__ . '/../..' . '/App/Model/Base/Instituicao.php',
         'Model\\Base\\Usuario' => __DIR__ . '/../..' . '/App/Model/Base/Usuario.php',
-        'Model\\DAO\\CadastroDAO' => __DIR__ . '/../..' . '/App/Model/DAO/InstituicaoDAO.php',
         'Model\\DAO\\DisciplinaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/DisciplinaDAO.php',
         'Model\\DAO\\Factory\\Connection' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Connection.php',
+        'Model\\DAO\\Factory\\Funcoes' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Funcoes.php',
+        'Model\\DAO\\InstituicaoDAO' => __DIR__ . '/../..' . '/App/Model/DAO/InstituicaoDAO.php',
         'Model\\DAO\\TurmaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/TurmaDAO.php',
     );
 

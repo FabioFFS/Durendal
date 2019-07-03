@@ -6,12 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Controllers\\ProfessorController\\Init' => $baseDir . '/App/Controller/ProfessorController/Init.php',
+    'Controllers\\LoginCadastro\\CadastroControl' => $baseDir . '/App/Controllers/LoginCadastro/CadastroControl.php',
     'Model\\Base\\Disciplina' => $baseDir . '/App/Model/Base/Disciplina.php',
     'Model\\Base\\Instituicao' => $baseDir . '/App/Model/Base/Instituicao.php',
     'Model\\Base\\Usuario' => $baseDir . '/App/Model/Base/Usuario.php',
-    'Model\\DAO\\CadastroDAO' => $baseDir . '/App/Model/DAO/InstituicaoDAO.php',
     'Model\\DAO\\DisciplinaDAO' => $baseDir . '/App/Model/DAO/DisciplinaDAO.php',
     'Model\\DAO\\Factory\\Connection' => $baseDir . '/App/Model/DAO/Factory/Connection.php',
+    'Model\\DAO\\Factory\\Funcoes' => $baseDir . '/App/Model/DAO/Factory/Funcoes.php',
+    'Model\\DAO\\InstituicaoDAO' => $baseDir . '/App/Model/DAO/InstituicaoDAO.php',
     'Model\\DAO\\TurmaDAO' => $baseDir . '/App/Model/DAO/TurmaDAO.php',
 );

@@ -13,4 +13,4 @@ require 'vendor/autoload.php';
 
 /*$c = new IndexController();
 $c->ignite();*/
-$a = new \Model\DAO\InstituicaoDAO();
+$a = new \Controllers\LoginCadastro\CadastroControl();

@@ -1,7 +1,5 @@
 <?php
-require_once 'Connection.php';
-//require_once 'password.php';
-
+namespace Model\DAO\Factory;
 class Funcoes {
     
     //No banco de dados , colocar varchar de 255

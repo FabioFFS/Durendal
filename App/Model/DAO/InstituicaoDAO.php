@@ -5,13 +5,16 @@ class InstituicaoDAO {
     private $con;
     private $nome;
     
+    private static $tabela = "Instituicao";
+    
     function __construct() {
-        $this->con = new Connection();
+        //$this->con = new Factory\Connection();
+        $a = new Factory\Connection();
     }
     
     function insert($objeto){
         try{
-            $cst = $this->con->conectar()->prepare("INSERT INTO Instituicao ('nome', data_cadastro, 'senha', 'email') VALUES (:nome, :data_cadastro, :senha, :email)");
+            $cst = $this->con->conectar()->prepare("INSERT INTO ".$tabela." ('nome', data_cadastro, 'senha', 'email') VALUES (:nome, :data_cadastro, :senha, :email)");
             $cst->bindParam(":nome", $objeto->nome, PDO::PARAM_STR);
             $cst->bindParam(":data_cadastro", $objeto->nome, PDO::PARAM_INT);
             $cst->bindParam(":email", $objeto->nome, PDO::PARAM_STR);

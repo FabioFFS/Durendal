@@ -8,6 +8,7 @@
             "Controllers\\": "App/Controller/",
             "Model\\Base\\": "App/Model/Base/",
             "Controllers\\ProfessorController\\": "App/Controller/ProfessorController",
+            "Controllers\\LoginCadastro\\": "App/Controllers/LoginCadastro",
             "Model\\DAO\\": "App/Model/DAO",
             "Model\\DAO\\Factory\\": "App/Model/DAO/Factory"
         }
