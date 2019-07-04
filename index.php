@@ -14,3 +14,4 @@ require 'vendor/autoload.php';
 /*$c = new IndexController();
 $c->ignite();*/
 $a = new \Controllers\LoginCadastro\CadastroControl();
+$a->salvar('nome', 'email', 'senha', 'instituicao');

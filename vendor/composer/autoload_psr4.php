@@ -9,8 +9,9 @@ return array(
     'Model\\DAO\\Factory\\' => array($baseDir . '/App/Model/DAO/Factory'),
     'Model\\DAO\\' => array($baseDir . '/App/Model/DAO'),
     'Model\\Base\\' => array($baseDir . '/App/Model/Base'),
-    'Controllers\\ProfessorController\\' => array($baseDir . '/App/Controller/ProfessorController'),
+    'Controllers\\ProfessorControllers\\' => array($baseDir . '/App/Controllers/ProfessorController'),
     'Controllers\\LoginCadastro\\' => array($baseDir . '/App/Controllers/LoginCadastro'),
+    'Controllers\\InstituicaoControllers\\' => array($baseDir . '/App/Controllers/InstituicaoControllers'),
     'Controllers\\' => array($baseDir . '/App/Controller'),
     'App\\' => array($baseDir . '/App'),
 );

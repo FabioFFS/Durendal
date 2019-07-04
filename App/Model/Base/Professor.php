@@ -1,4 +1,6 @@
 <?php
+namespace Model\Base;
+
 class Professor {
     private $nome;
     private $email;

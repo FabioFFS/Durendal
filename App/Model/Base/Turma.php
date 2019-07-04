@@ -1,4 +1,5 @@
 <?php
+namespace Model\Base;
 
 class Turma {
     private $nome;

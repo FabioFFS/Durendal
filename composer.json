@@ -5,12 +5,15 @@
     "autoload": {
         "psr-4": {
             "App\\": "App/",
-            "Controllers\\": "App/Controller/",
             "Model\\Base\\": "App/Model/Base/",
-            "Controllers\\ProfessorController\\": "App/Controller/ProfessorController",
-            "Controllers\\LoginCadastro\\": "App/Controllers/LoginCadastro",
             "Model\\DAO\\": "App/Model/DAO",
-            "Model\\DAO\\Factory\\": "App/Model/DAO/Factory"
+            "Model\\DAO\\Factory\\": "App/Model/DAO/Factory",
+            "Controllers\\ProfessorControllers\\": "App/Controllers/ProfessorController",
+            "Controllers\\InstituicaoControllers\\": "App/Controllers/InstituicaoControllers",
+            "Controllers\\LoginCadastro\\": "App/Controllers/LoginCadastro",
+            "Controllers\\": "App/Controller/"
+            
+            
         }
     }
     

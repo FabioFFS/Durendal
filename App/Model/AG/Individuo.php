@@ -1,28 +1,33 @@
 <?php
-    class Individuo{
-        private $identificacao;
-        private $cromo = array();
-        private $nota;
 
-       public function getIdentificacao(){
-           return $this->identificacao;
-       } 
+namespace Model\AG;
 
-       public function setIdentificacao($identificacao){
-            $this->identificacao = $identificacao;
-       }
+class Individuo {
 
-       public function setCromo($cromo){
-            $this->cromo = $cromo;
-       }
+    private $identificacao;
+    private $cromo = array();
+    private $nota;
 
-       public function getCromo(){
-           return $this->cromo;
-       }
-
-       public function setNota($nota){
-            $this->nota = $nota;
-       }
+    public function getIdentificacao() {
+        return $this->identificacao;
     }
+
+    public function setIdentificacao($identificacao) {
+        $this->identificacao = $identificacao;
+    }
+
+    public function setCromo($cromo) {
+        $this->cromo = $cromo;
+    }
+
+    public function getCromo() {
+        return $this->cromo;
+    }
+
+    public function setNota($nota) {
+        $this->nota = $nota;
+    }
+
+}
 
 ?>

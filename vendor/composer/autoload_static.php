@@ -15,8 +15,9 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
         ),
         'C' => 
         array (
-            'Controllers\\ProfessorController\\' => 32,
+            'Controllers\\ProfessorControllers\\' => 33,
             'Controllers\\LoginCadastro\\' => 26,
+            'Controllers\\InstituicaoControllers\\' => 35,
             'Controllers\\' => 12,
         ),
         'A' => 
@@ -38,13 +39,17 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
         array (
             0 => __DIR__ . '/../..' . '/App/Model/Base',
         ),
-        'Controllers\\ProfessorController\\' => 
+        'Controllers\\ProfessorControllers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App/Controller/ProfessorController',
+            0 => __DIR__ . '/../..' . '/App/Controllers/ProfessorController',
         ),
         'Controllers\\LoginCadastro\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/Controllers/LoginCadastro',
+        ),
+        'Controllers\\InstituicaoControllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Controllers/InstituicaoControllers',
         ),
         'Controllers\\' => 
         array (
@@ -57,9 +62,14 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
     );
 
     public static $classMap = array (
+        'Controllers\\InstituicaoControllers\\HorariosController' => __DIR__ . '/../..' . '/App/Controllers/InstituicaoControllers/HorariosController.php',
+        'Controllers\\InstituicaoControllers\\ProfessoresController' => __DIR__ . '/../..' . '/App/Controllers/InstituicaoControllers/ProfessoresController.php',
+        'Controllers\\InstituicaoControllers\\TurmaController' => __DIR__ . '/../..' . '/App/Controllers/InstituicaoControllers/TurmaController.php',
         'Controllers\\LoginCadastro\\CadastroControl' => __DIR__ . '/../..' . '/App/Controllers/LoginCadastro/CadastroControl.php',
         'Model\\Base\\Disciplina' => __DIR__ . '/../..' . '/App/Model/Base/Disciplina.php',
         'Model\\Base\\Instituicao' => __DIR__ . '/../..' . '/App/Model/Base/Instituicao.php',
+        'Model\\Base\\Professor' => __DIR__ . '/../..' . '/App/Model/Base/Professor.php',
+        'Model\\Base\\Turma' => __DIR__ . '/../..' . '/App/Model/Base/Turma.php',
         'Model\\Base\\Usuario' => __DIR__ . '/../..' . '/App/Model/Base/Usuario.php',
         'Model\\DAO\\DisciplinaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/DisciplinaDAO.php',
         'Model\\DAO\\Factory\\Connection' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Connection.php',

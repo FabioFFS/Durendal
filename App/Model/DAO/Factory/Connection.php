@@ -37,8 +37,8 @@ class Connection {
                 self::$instancia = new PDO('mysql:host=' . $this->servidor . ';dbname=' . $this->banco, $this->user, $this->senha);
             }
             return self::$instancia;
-        } catch (PDOException $ex) {
-            
+        } catch (PDOException $e) {
+            $e->getMessage();
         }
     }
 
