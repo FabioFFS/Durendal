@@ -13,5 +13,15 @@ require 'vendor/autoload.php';
 
 /*$c = new IndexController();
 $c->ignite();*/
-$a = new \Controllers\LoginCadastro\CadastroControl();
-$a->salvar('nome', 'email', 'senha', 'instituicao');
+//$a->salvar('nome', 'email', 'senha', 'instituicao');
+//(new Model\DAO\Factory\Connection)->getInstancia();
+//echo phpinfo();
+//$con = new PDOStatement('mysql:host=localhost;dbname=DuredalDB', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+
+$cad = new \Model\DAO\InstituicaoDAO();
+$instituicao = new Model\Base\Instituicao();
+$instituicao->setNome("testepdo");
+$instituicao->setData_Cadastro(11111111);
+$instituicao->setEmail("testepdo");
+$instituicao->setSenha("testepdo");
+$cad->insert($instituicao);

@@ -1,7 +1,6 @@
 
 {
     "name": "durendal/durendal",
-    "require": {},
     "autoload": {
         "psr-4": {
             "App\\": "App/",
@@ -12,7 +11,6 @@
             "Controllers\\InstituicaoControllers\\": "App/Controllers/InstituicaoControllers",
             "Controllers\\LoginCadastro\\": "App/Controllers/LoginCadastro",
             "Controllers\\": "App/Controller/"
-            
             
         }
     }

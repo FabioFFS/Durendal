@@ -1,6 +1,7 @@
 <?php
-require_once '/Factory/Funcoes.php';
-require_once '/Factory/Connection.php';
+namespace Model\DAO;
+//require_once '/Factory/Funcoes.php';
+//require_once '/Factory/Connection.php';
 
 class CadastroDAO {
     private $con;
@@ -10,7 +11,7 @@ class CadastroDAO {
     private $senha;
     
     function __construct() {
-        $this->con = new Connection();
+        $this->con = new Factory\Connection();
     }
     
     function insert($instituicao){

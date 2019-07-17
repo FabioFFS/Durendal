@@ -71,6 +71,7 @@ class ComposerStaticInitb9432e224800528136ead096394b2546
         'Model\\Base\\Professor' => __DIR__ . '/../..' . '/App/Model/Base/Professor.php',
         'Model\\Base\\Turma' => __DIR__ . '/../..' . '/App/Model/Base/Turma.php',
         'Model\\Base\\Usuario' => __DIR__ . '/../..' . '/App/Model/Base/Usuario.php',
+        'Model\\DAO\\CadastroDAO' => __DIR__ . '/../..' . '/App/Model/DAO/CadastroDAO.php',
         'Model\\DAO\\DisciplinaDAO' => __DIR__ . '/../..' . '/App/Model/DAO/DisciplinaDAO.php',
         'Model\\DAO\\Factory\\Connection' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Connection.php',
         'Model\\DAO\\Factory\\Funcoes' => __DIR__ . '/../..' . '/App/Model/DAO/Factory/Funcoes.php',

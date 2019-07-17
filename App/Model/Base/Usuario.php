@@ -1,27 +1,34 @@
 <?php
+
 namespace Model\Base;
 
 class Usuario {
+
     private $nome;
     private $senha;
     private $email;
-    
-function getNome(){
+
+    function getNome() {
         return $this->nome;
     }
-function getSenha(){
+
+    function getSenha() {
         return $this->senha;
     }
-function getEmail(){
+
+    function getEmail() {
         return $this->email;
     }
-function setNome($nome){
+
+    function setNome($nome) {
         $this->nome = $nome;
     }
-function setEmail($email){
+
+    function setEmail($email) {
         $this->email = $email;
     }
-function setSenha($senha){
+
+    function setSenha($senha) {
         $this->senha = $senha;
     }
 

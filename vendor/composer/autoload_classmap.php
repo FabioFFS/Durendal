@@ -15,6 +15,7 @@ return array(
     'Model\\Base\\Professor' => $baseDir . '/App/Model/Base/Professor.php',
     'Model\\Base\\Turma' => $baseDir . '/App/Model/Base/Turma.php',
     'Model\\Base\\Usuario' => $baseDir . '/App/Model/Base/Usuario.php',
+    'Model\\DAO\\CadastroDAO' => $baseDir . '/App/Model/DAO/CadastroDAO.php',
     'Model\\DAO\\DisciplinaDAO' => $baseDir . '/App/Model/DAO/DisciplinaDAO.php',
     'Model\\DAO\\Factory\\Connection' => $baseDir . '/App/Model/DAO/Factory/Connection.php',
     'Model\\DAO\\Factory\\Funcoes' => $baseDir . '/App/Model/DAO/Factory/Funcoes.php',
